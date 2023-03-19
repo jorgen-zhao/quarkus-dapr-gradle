@@ -1,4 +1,4 @@
-package com.qhx;
+package com.demo;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 

@@ -38,7 +38,7 @@ dependencies {
     }
 
 }
-group = "com.qhx"
+group = "com.demo"
 version = "1.0.0-SNAPSHOT"
 
 java {
