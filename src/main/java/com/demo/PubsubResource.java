@@ -53,7 +53,7 @@ public class PubsubResource {
 
         sendTopicMsg(prefix, "topic3");
 
-        content = prefix + "-" + "topic4";
+        content = prefix + "from" + "topic4";
         TestData testData = new TestData();
         testData.setContent(content);
         dapr.publishEvent("jetstream-pubsub", "topic4", testData, new HashMap<>());
@@ -70,7 +70,7 @@ public class PubsubResource {
      */
     private void sendTopicMsg(Integer count, String topicName) {
         String pubsubName = "jetstream-pubsub";
-        String content = count + "-" + topicName;
+        String content = count + "from" + topicName;
         dapr.publishEvent(pubsubName, topicName, content.getBytes(StandardCharsets.UTF_8), new HashMap<>());
         System.out.println("App1 sent event to " + topicName + " with content=" + content);
     }
