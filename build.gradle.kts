@@ -31,7 +31,7 @@ dependencies {
         resolutionStrategy.eachDependency {
             if (requested.group == "com.squareup.okhttp3" && requested.name == "okhttp" && requested.version == "3.14.9") {
                 useVersion("4.10.0")
-                because("fixes critical bug in 1.2")
+                because("fixes critical bug in 3.14.9")
             }
 
         }
